@@ -1,0 +1,819 @@
+<style>
+
+
+
+body{ margin: 0;
+	font-family: Nunito;
+ font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #333;
+	overflow-x: hidden;
+}
+
+h1 { font-family: Nunito; 
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal; 
+	font-weight: 700; 
+	line-height: 26.4px; 
+} 
+h3 { 
+	font-family: Nunito; 
+	font-size: 14px; 
+	font-style: normal; 
+	font-variant: normal; 
+	font-weight: 700; 
+	line-height: 15.4px; 
+}
+p { 
+	font-family: Nunito; 
+	font-size: 14px; 
+	font-style: normal; 
+	font-variant: normal; 
+	font-weight: 400; 
+	line-height: 20px;
+	
+ }
+ p + p{
+	margin-top: 10px;
+	text-align: center;
+ }
+blockquote { 
+	font-family: Nunito; 
+	font-size: 21px; 
+	font-style: normal; 
+	font-variant: normal; 
+	font-weight: 400; 
+	line-height: 30px; 
+} 
+pre { 
+	font-family: Nunito; 
+	font-size: 13px; 
+	font-style: normal; 
+	font-variant: normal; 
+	font-weight: 400; 
+	line-height: 18.5714px; 
+}
+
+.video-header{height: 92vh;
+         display: flex;
+	     align-items: center;
+	     color: #fff;
+	
+}
+*{box-sizing: border-box;}
+.wrap{
+	max-width: 960px;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	text-align: center;
+	
+}
+.fullscreen-video-wrap{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	
+}
+.fullscreen-video-wrap video{
+	min-height: 100%;
+	min-width: 100%;
+	
+}
+
+.header-overlay{
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(34,33,33,0.65);
+	opacity: 0.80;
+	margin-bottom: 40px;
+	
+}
+.header-overlay .service-needs{
+	margin-top: 40px;
+}
+.header-content{
+	z-index: 2;
+	margin-top:15%;
+	padding: 0 5rem;
+	
+}
+
+.header-content h1{
+	font-size: 50px;
+	margin-bottom: 0;
+	
+}
+.header-content p{
+	font-size: 1.5rem;
+	display: block;
+	padding-bottom: 2rem;
+	margin-top: 10px;
+}
+
+.my-btn{
+	padding: 1rem 1rem;
+}
+
+@media(max-width:768px){
+	.header-content h1{font-size: 40px;}
+	.header-content p{font-size: 1rem;}
+}
+
+section{text-align: center; margin-top: 50px; font-size: 1.5rem;}
+
+.navbar{z-index: 10;}
+.my-nav .nav-link{color: aliceblue;}
+.my-nav .navbar-brand{color: aliceblue;}
+.navbar-toggler-icon{color: aliceblue;}
+
+.header-content .btn{
+	size: 1.5em;
+	color: #fff;
+}
+.container .heading{
+	text-align: center;
+}
+.container .content{
+	text-align: center;
+	margin-right: 265px;
+	margin-left: 265px;
+	margin-top: 54px;
+}
+.working-logos li{
+	list-style-type: none;
+}
+.working-logos{
+	display: flex;
+	margin-left: 25%;
+	margin-right: 20%;
+	padding: 30px;
+	justify-content: space-between;
+}
+
+.section-three{
+background: linear-gradient(to bottom right,#68467f,#000416);	
+}
+.section-three .service {
+color: #fff;
+
+}
+.container .content{
+	size: 55px;
+}
+.responsive-image{
+	margin-top: 65px;
+}
+.cross-browser-platform{
+	background: linear-gradient(to bottom right,#5d9ee8,#000416);		
+}
+.cross-browser-platform .container{
+	color: #fff;
+}
+.cross-browser-platform .content{
+	margin-top: 30px;
+	margin-inline: 40px;
+}
+.consulting{
+	background: linear-gradient(to bottom right,#B03060,#000416);
+}
+.consulting-section .consulting p,h2{
+	color: #fff;
+}
+.container{
+	background: linear-gradient(to bottom right,#4685bd);
+}
+.services-page .content {
+    line-height: 2;
+    font-size: 16px;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+ul {
+	margin: 0;
+  }
+  ul.dashed {
+	list-style-type: none;
+  }
+  ul.dashed > li {
+	text-indent: -5px;
+  }
+  ul.dashed > li:before {
+	content: "-";
+	text-indent: -5px;
+  }
+  .container .content{
+	  margin-left: 35%;
+	  size: 5px;
+  }
+
+  .services-page .bottom-content .btn-content .btn-rounded.red {
+    background: 0 0;
+    color: #fff;
+    border-color: #fff;
+    top: 10px;
+    padding: 5px 20px;
+    font-size: 14px;
+}
+.btn-rounded {
+    position: relative;
+    font-family: Avenir-600;
+    background: 0 0;
+    border: 2px solid;
+    padding: 8px 30px;
+    border-radius: 35px;
+    background: #fff;
+    z-index: 4;
+    color: #555;
+    z-index: 0;
+    overflow: hidden;
+}
+a {
+    display: block;
+    outline: 0;
+    text-decoration: none!important;
+}
+a {
+     color: #337ab7; 
+    text-decoration: none;
+}
+a {
+    background-color: transparent;
+}
+* {
+    letter-spacing: 1.4;
+}
+* {
+    box-sizing: border-box;
+}
+
+.services-page .bottom-content {
+    font-family: Avenir-600;
+    margin-bottom: 20px;
+}
+.services-page .content {
+    line-height: 2;
+    font-size: 16px;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+.btn-rounded.red{
+	background: #4685bd;
+
+}
+.progressive-web-app{
+	background: linear-gradient(to right bottom,#081a73,#901305)
+}
+.design-and-ui{
+	background: linear-gradient(to right bottom,#5dc7d4,#290439);
+}
+.list-features  {
+	display: flex;
+	font-size: 18px;
+	justify-content: space-around;
+	
+}
+.row{
+	display: flex;
+}
+.col-md-6{
+flex: 1 1 auto;
+
+}
+.list-inline{
+	display: flex;
+	justify-content: space-around;
+}
+
+
+
+
+
+
+</style>
+
+
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/bootstrap4.css">
+<link rel="stylesheet" href="styles/styles.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32"/>
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16"/>
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Services | CodeMyMobile</title>
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-expand-lg my-nav">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="video-header wrap">
+	<div class="fullscreen-video-wrap">
+		<video src="images/video1.mp4" autoplay loop></video>
+	</div>
+	<div class="header-overlay">
+		<div class="header-content">
+			<h1>WHAT WE OFFER?</h1>
+			<p class="service-needs">SERVICES TO MEET ALL YOUR MOBILITY NEEDS.</p>
+			<a href="https://codemymobile.com" class="btn btn-success my-btn mt-4" >CONTACT US</a>
+		</div>
+  </div> 
+
+</div>
+
+<div>
+<div class="container section-padding">
+						<h2 class="heading">Mobile Application Development</h2>
+						<p class="content">
+							No matter what’s the platform or the device, We build an app for that. Starting from custom, native iOS, Android, Hybrid or Windows Apps, we do it all. We build apps that are successful. We bring together smart business strategies, captivating UI/UX design and a robust tech team. Our development team is backed by powerful agile methodologies and rapid launch marketing.
+						</p>
+						<p class="content">
+							Apart from our technical expertise, we keep project planning first. We start off with a draft on project development roadmap, usually prepared by our experienced Business Analysts. We usually kick off with a Minimum Viable Product. MVP development
+							helps our clients pilot test their ideas and collect valuable feedbacks. It is also the best way to get the app out in a small budget and in a short duration.
+						</p>
+						<p class="content">
+							Our team strategizes and codes the perfect solution for your needs, ultimately making your business more intelligent and profitable.
+            </p>
+            
+
+					</div>
+
+          <div class="working-logos">
+              
+              <div>
+                  <?xml  version="1.0" encoding="iso-8859-1"?>
+                  <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                  <svg height="50px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 305 305" style="enable-background:new 0 0 305 305;" xml:space="preserve">
+                  <g id="XMLID_228_">
+                    <path id="XMLID_229_" d="M40.738,112.119c-25.785,44.745-9.393,112.648,19.121,153.82C74.092,286.523,88.502,305,108.239,305
+                      c0.372,0,0.745-0.007,1.127-0.022c9.273-0.37,15.974-3.225,22.453-5.984c7.274-3.1,14.797-6.305,26.597-6.305
+                      c11.226,0,18.39,3.101,25.318,6.099c6.828,2.954,13.861,6.01,24.253,5.815c22.232-0.414,35.882-20.352,47.925-37.941
+                      c12.567-18.365,18.871-36.196,20.998-43.01l0.086-0.271c0.405-1.211-0.167-2.533-1.328-3.066c-0.032-0.015-0.15-0.064-0.183-0.078
+                      c-3.915-1.601-38.257-16.836-38.618-58.36c-0.335-33.736,25.763-51.601,30.997-54.839l0.244-0.152
+                      c0.567-0.365,0.962-0.944,1.096-1.606c0.134-0.661-0.006-1.349-0.386-1.905c-18.014-26.362-45.624-30.335-56.74-30.813
+                      c-1.613-0.161-3.278-0.242-4.95-0.242c-13.056,0-25.563,4.931-35.611,8.893c-6.936,2.735-12.927,5.097-17.059,5.097
+                      c-4.643,0-10.668-2.391-17.645-5.159c-9.33-3.703-19.905-7.899-31.1-7.899c-0.267,0-0.53,0.003-0.789,0.008
+                      C78.894,73.643,54.298,88.535,40.738,112.119z"/>
+                    <path id="XMLID_230_" d="M212.101,0.002c-15.763,0.642-34.672,10.345-45.974,23.583c-9.605,11.127-18.988,29.679-16.516,48.379
+                      c0.155,1.17,1.107,2.073,2.284,2.164c1.064,0.083,2.15,0.125,3.232,0.126c15.413,0,32.04-8.527,43.395-22.257
+                      c11.951-14.498,17.994-33.104,16.166-49.77C214.544,0.921,213.395-0.049,212.101,0.002z"/>
+                  </g>  
+                  </svg>
+                <p class="technology-logo">ios</p>
+              </div>
+              <div>
+                  <svg height="50px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 505.145 505.145" style="enable-background:new 0 0 505.145 505.145;" xml:space="preserve">
+               
+                     <path style="fill:#010002;" d="M68.541,164.715h-1.294c-16.588,0-30.113,13.568-30.113,30.113v131.107
+                       c0,16.61,13.525,30.134,30.113,30.134h1.316c16.588,0,30.113-13.568,30.113-30.134V194.827
+                       C98.654,178.283,85.108,164.715,68.541,164.715z"/>
+                     <path style="fill:#010002;" d="M113.085,376.54c0,15.229,12.446,27.632,27.675,27.632h29.574v70.817
+                       c0,16.631,13.568,30.156,30.113,30.156h1.294c16.61,0,30.156-13.546,30.156-30.156v-70.817h41.33v70.817
+                       c0,16.631,13.611,30.156,30.156,30.156h1.273c16.609,0,30.134-13.546,30.134-30.156v-70.817h29.595
+                       c15.207,0,27.654-12.403,27.654-27.632V169.525H113.085V376.54z"/>
+                     <path style="fill:#010002;" d="M322.041,43.983l23.491-36.26c1.51-2.287,0.841-5.414-1.467-6.903
+                       c-2.286-1.51-5.414-0.884-6.903,1.467l-24.353,37.512c-18.27-7.485-38.676-11.691-60.226-11.691
+                       c-21.571,0-41.934,4.206-60.247,11.691l-24.31-37.512c-1.488-2.351-4.638-2.977-6.946-1.467
+                       c-2.308,1.488-2.977,4.616-1.467,6.903l23.512,36.26c-42.387,20.773-70.968,59.924-70.968,104.834
+                       c0,2.761,0.173,5.479,0.41,8.175h280.053c0.237-2.696,0.388-5.414,0.388-8.175C393.009,103.907,364.406,64.756,322.041,43.983z
+                        M187.655,108.911c-7.442,0-13.482-5.997-13.482-13.46c0-7.463,6.04-13.439,13.482-13.439c7.485,0,13.482,5.975,13.482,13.439
+                       S195.097,108.911,187.655,108.911z M317.49,108.911c-7.442,0-13.482-5.997-13.482-13.46c0-7.463,6.04-13.439,13.482-13.439
+                       c7.463,0,13.46,5.975,13.46,13.439C330.95,102.914,324.953,108.911,317.49,108.911z"/>
+                     <path style="fill:#010002;" d="M437.876,164.715h-1.251c-16.588,0-30.156,13.568-30.156,30.113v131.107
+                       c0,16.61,13.59,30.134,30.156,30.134h1.273c16.609,0,30.113-13.568,30.113-30.134V194.827
+                       C468.011,178.283,454.464,164.715,437.876,164.715z"/>
+                </svg>
+                <p class="technology-logo">Android</p>
+              </div>
+              <div>
+                  <svg height="50px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  width="27.17px" height="27.17px" viewBox="0 0 27.17 27.17" style="enable-background:new 0 0 27.17 27.17;" xml:space="preserve"
+                 >
+               <g>
+                 <path d="M1.609,0.008c0.013,0.129,0.023,0.248,0.033,0.367c0.103,1.153,0.203,2.307,0.307,3.459
+                   c0.132,1.465,0.265,2.933,0.395,4.397c0.11,1.232,0.219,2.467,0.328,3.7c0.124,1.389,0.249,2.777,0.373,4.167
+                   c0.109,1.231,0.218,2.467,0.328,3.7c0.134,1.502,0.27,3.002,0.398,4.504c0.008,0.097,0.039,0.138,0.135,0.164
+                   c3.177,0.896,6.352,1.793,9.525,2.687c0.08,0.022,0.176,0.021,0.256,0c3.187-0.894,6.373-1.789,9.56-2.682
+                   c0.109-0.031,0.143-0.078,0.15-0.185c0.068-0.837,0.146-1.673,0.219-2.509c0.082-0.922,0.166-1.846,0.248-2.77
+                   c0.074-0.826,0.146-1.65,0.221-2.477c0.084-0.924,0.166-1.848,0.248-2.771c0.072-0.825,0.146-1.649,0.221-2.476
+                   c0.082-0.92,0.164-1.84,0.246-2.76c0.074-0.828,0.146-1.656,0.223-2.486c0.082-0.92,0.164-1.84,0.246-2.76
+                   c0.074-0.838,0.148-1.678,0.227-2.517C25.517,0.51,25.538,0.258,25.562,0C17.571,0.008,9.6,0.008,1.609,0.008z M20.831,7.965
+                   c-3.82,0-7.638,0-11.47,0c0.09,1.033,0.179,2.056,0.267,3.082c3.649,0,7.287,0,10.938,0c-0.027,0.217-0.061,0.422-0.08,0.629
+                   c-0.051,0.521-0.1,1.043-0.146,1.562c-0.084,0.943-0.166,1.892-0.248,2.835c-0.072,0.848-0.145,1.691-0.221,2.539
+                   c-0.047,0.535-0.1,1.07-0.145,1.604c-0.008,0.084-0.062,0.086-0.111,0.101c-1.293,0.356-2.584,0.713-3.877,1.067
+                   c-0.709,0.197-1.417,0.396-2.127,0.591c-0.032,0.01-0.076,0.004-0.11-0.007c-2.006-0.551-4.011-1.104-6.015-1.653
+                   c-0.092-0.023-0.094-0.08-0.1-0.146c-0.051-0.644-0.102-1.283-0.15-1.927c-0.067-0.864-0.135-1.729-0.203-2.594
+                   c-0.002-0.022-0.002-0.049-0.004-0.08c0.99,0,1.978,0,2.971,0c0.025,0.281,0.052,0.562,0.076,0.838
+                   c0.044,0.49,0.088,0.979,0.13,1.472c0.004,0.056,0.021,0.078,0.075,0.094c1.076,0.287,2.15,0.578,3.228,0.867
+                   c0.038,0.011,0.084,0.006,0.123-0.004c1.062-0.285,2.123-0.574,3.187-0.856c0.064-0.019,0.092-0.048,0.098-0.113
+                   c0.117-1.254,0.236-2.51,0.357-3.763c0-0.004-0.002-0.009-0.004-0.023c-3.463,0-6.928,0-10.401,0C6.596,11.049,6.326,8.029,6.055,5
+                   c5.025,0,10.028,0,15.057,0C21.021,5.988,20.925,6.971,20.831,7.965z"/>
+               </g>
+               </svg>
+                <p class="technology-logo">html 5</p></div>
+              <div>
+                  <svg x="0px" y="0px" height="50px" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480;" xml:space="preserve" class="windows-svg">
+                      <g>
+                        <path d="M0.176,224L0.001,67.963l192-26.072V224H0.176z M224.001,37.241L479.937,0v224H224.001V37.241z M479.999,256l-0.062,224   l-255.936-36.008V256H479.999z M192.001,439.918L0.157,413.621L0.147,256h191.854V439.918z" fill="#454545"></path>
+                      </g>
+                    </svg>
+                <p class="technology-logo">Windows</p></div>
+              <div><img  src="logo/Watch-512.svg"  height="50px;" width="50px;"/></br><p class="technology-logo">Wearable</p></div>
+              <div><img  src="logo/cloud-wifi-iot-internet-things-512 (1).svg"  height="50px;" width="50px;"/></br><p class="technology-logo">IOT</p></div>
+              <div><img  src="logo/gamepad.svg"  height="50px;" width="50px;"/></br><p class="technology-logo">Gaming</p></div>
+              <div><img  src="logo/team.svg"  height="50px;" width="50px;"/></br><p class="technology-logo">Team</p></div>
+           
+            
+          
+          </div>
+          
+        
+        </div>
+
+
+<div class="section-three">
+
+    <section class="service ">
+        <div class="container section-padding">
+          <h2 class="heading">Responsive Web Development</h2>
+          <p class="content">
+            Screen sizes will always be changing, so it’s important that your site can adapt to any screen size, today or in the future. The use of mobile devices to surf the web is growing at an astronomical pace, but unfortunately much of the web isn't
+            optimized for those mobile devices. We bring in the best designs and technologies to give the end user a flawless and smooth cross browser, cross platform, mobile optimized browsing experience.
+          </p>
+         <img class="responsive-image" src="images/responsive-img.png">
+        </div>
+      </section>
+
+      <div class="cross-browser-platform">
+        <div class="container section-padding">
+          <h2 class="heading">Cross Browser &amp; Platform</h2>
+          <p class="content">
+            We nail it when it comes to performing excellently across multiple browsers and platforms. With an endless combination of modern </p><p> and legacy browsers and platforms for users to choose from (depending on their system capabilities), it's our
+            responsibility as </p><p>designers and developers to ensure the apps we build perform adequately.</p>
+          </p>
+          <ul class="list-inline hidden-xs device-type show">
+            <li class="position-relative mobile-1">
+              <svg width="250" height="480" viewBox="0 0 373 559">
+                <path d="M3.530,557.806 L3.530,70.670 C3.530,70.670 -8.135,0.667 78.858,0.667 L295.291,0.667 C295.291,0.667 367.435,-1.084 367.435,71.731 L367.435,558.806 L3.530,557.806 ZM117.000,27.000 C114.791,27.000 113.000,28.791 113.000,31.000 C113.000,33.209 114.791,35.000 117.000,35.000 C119.209,35.000 121.000,33.209 121.000,31.000 C121.000,28.791 119.209,27.000 117.000,27.000 ZM214.500,27.000 L141.500,27.000 C139.567,27.000 138.000,28.567 138.000,30.500 C138.000,32.433 139.567,34.000 141.500,34.000 L214.500,34.000 C216.433,34.000 218.000,32.433 218.000,30.500 C218.000,28.567 216.433,27.000 214.500,27.000 ZM234.000,27.000 C231.791,27.000 230.000,28.791 230.000,31.000 C230.000,33.209 231.791,35.000 234.000,35.000 C236.209,35.000 238.000,33.209 238.000,31.000 C238.000,28.791 236.209,27.000 234.000,27.000 ZM252.000,27.000 C249.791,27.000 248.000,28.791 248.000,31.000 C248.000,33.209 249.791,35.000 252.000,35.000 C254.209,35.000 256.000,33.209 256.000,31.000 C256.000,28.791 254.209,27.000 252.000,27.000 ZM351.000,67.000 C351.000,64.239 348.761,62.000 346.000,62.000 L25.000,62.000 C22.239,62.000 20.000,64.239 20.000,67.000 L20.000,539.000 C20.000,541.761 22.239,544.000 25.000,544.000 L346.000,544.000 C348.761,544.000 351.000,541.761 351.000,539.000 L351.000,67.000 Z" class="andmobile-cls1"></path>
+                <path d="M399.629,557.988 L400.369,198.142 C400.138,198.228 399.890,198.282 399.629,198.282 C398.457,198.282 397.507,197.332 397.507,196.160 L397.507,181.311 C397.507,180.140 398.457,179.190 399.629,179.190 C399.905,179.190 400.166,179.246 400.408,179.342 L400.465,151.440 C400.209,151.551 399.926,151.613 399.629,151.613 C398.457,151.613 397.507,150.663 397.507,149.491 L397.507,134.643 C397.507,133.471 398.457,132.521 399.629,132.521 C399.942,132.521 400.237,132.593 400.504,132.714 L400.562,104.719 C400.279,104.858 399.965,104.944 399.629,104.944 C398.457,104.944 397.507,103.994 397.507,102.823 L397.507,81.609 C397.507,80.438 398.457,79.488 399.629,79.488 C399.986,79.488 400.318,79.585 400.613,79.741 L400.690,42.365 C400.690,42.365 405.287,4.181 437.823,4.181 L575.799,4.181 C575.765,4.010 575.746,3.833 575.746,3.651 C575.746,2.187 576.934,0.999 578.398,0.999 L616.592,0.999 C618.057,0.999 619.245,2.187 619.245,3.651 C619.245,3.833 619.226,4.010 619.191,4.181 L627.732,4.181 C627.732,4.181 663.805,7.364 663.805,40.243 L663.805,557.988 L399.629,557.988 ZM532.000,27.000 C530.343,27.000 529.000,28.343 529.000,30.000 C529.000,31.657 530.343,33.000 532.000,33.000 C533.657,33.000 535.000,31.657 535.000,30.000 C535.000,28.343 533.657,27.000 532.000,27.000 ZM551.500,50.000 L512.500,50.000 C511.119,50.000 510.000,51.119 510.000,52.500 C510.000,53.881 511.119,55.000 512.500,55.000 L551.500,55.000 C552.881,55.000 554.000,53.881 554.000,52.500 C554.000,51.119 552.881,50.000 551.500,50.000 ZM643.000,85.000 L422.000,85.000 L423.000,537.000 L643.000,537.000 L643.000,85.000 Z" class="andmobile-cls1"></path>
+                <g>
+                  <path d="M987.113,171.765 C987.113,173.523 983.930,174.947 983.930,174.947 L982.869,174.947 C982.273,174.947 981.963,174.947 981.809,174.947 L981.809,90.094 L982.869,90.094 L983.930,90.094 C983.930,90.094 987.113,91.519 987.113,93.277 L987.113,125.927 L983.930,132.026 L987.113,138.464 L987.113,171.765 ZM973.382,554.867 L718.755,554.867 C715.825,554.867 713.450,552.493 713.450,549.564 L713.450,9.485 C713.450,6.556 715.825,4.181 718.755,4.181 L973.382,4.181 C976.312,4.181 978.687,6.556 978.687,9.485 L978.687,549.564 C978.687,552.493 976.312,554.867 973.382,554.867 ZM925.000,28.000 C925.000,26.343 923.657,25.000 922.000,25.000 L798.000,25.000 C796.343,25.000 795.000,26.343 795.000,28.000 L795.000,36.000 C795.000,37.657 796.343,39.000 798.000,39.000 L922.000,39.000 C923.657,39.000 925.000,37.657 925.000,36.000 L925.000,28.000 ZM961.000,70.000 C961.000,67.239 958.761,65.000 956.000,65.000 L738.000,65.000 C735.239,65.000 733.000,67.239 733.000,70.000 L733.000,532.000 C733.000,534.761 735.239,537.000 738.000,537.000 L956.000,537.000 C958.761,537.000 961.000,534.761 961.000,532.000 L961.000,70.000 ZM986.113,201.464 L986.113,238.587 C986.113,240.344 984.688,241.768 982.930,241.768 L981.869,241.768 L981.869,198.282 L982.930,198.282 C984.688,198.282 986.113,199.706 986.113,201.464 Z" class="andmobile-cls1"></path>
+                  <circle cx="742.5" cy="33.234" r="5.844" class="andmobile-cls2"></circle>
+                </g>
+              </svg>
+              <div class="mobile-content">
+                <h3>Android and Chrome
+                </h3>
+                <ul class="list-inline">
+                  <li>
+                    <svg height="30px"  x="0px" y="0px" viewBox="0 0 413.137 413.137" style="enable-background:new 0 0 413.137 413.137;" xml:space="preserve">
+                      <g>
+                        <path style="fill:#AAC148;" d="M311.358,136.395H101.779c-4.662,0-8.441,3.779-8.441,8.441v175.749
+      c0,4.662,3.779,8.441,8.441,8.441h37.363v59.228c0,13.742,11.14,24.883,24.883,24.883l0,0c13.742,0,24.883-11.14,24.883-24.883
+      v-59.228h34.803v59.228c0,13.742,11.14,24.883,24.883,24.883l0,0c13.742,0,24.883-11.14,24.883-24.883v-59.228h37.882
+      c4.662,0,8.441-3.779,8.441-8.441V144.836C319.799,140.174,316.02,136.395,311.358,136.395z"></path>
+                        <path style="fill:#AAC148;" d="M57.856,136.354L57.856,136.354c-13.742,0-24.883,11.14-24.883,24.883v101.065
+      c0,13.742,11.14,24.883,24.883,24.883l0,0c13.742,0,24.883-11.14,24.883-24.883V161.237
+      C82.738,147.495,71.598,136.354,57.856,136.354z"></path>
+                        <path style="fill:#AAC148;" d="M355.281,136.354L355.281,136.354c-13.742,0-24.883,11.14-24.883,24.883v101.065
+      c0,13.742,11.14,24.883,24.883,24.883l0,0c13.742,0,24.883-11.14,24.883-24.883V161.237
+      C380.164,147.495,369.024,136.354,355.281,136.354z"></path>
+                        <path style="fill:#AAC148;" d="M103.475,124.069h205.692c5.366,0,9.368-4.943,8.266-10.195
+      c-6.804-32.428-27.45-59.756-55.465-75.543l17.584-31.727c1.19-2.148,0.414-4.855-1.734-6.045
+      c-2.153-1.193-4.856-0.414-6.046,1.734l-17.717,31.966c-14.511-6.734-30.683-10.495-47.734-10.495
+      c-17.052,0-33.224,3.761-47.735,10.495L140.869,2.292c-1.191-2.149-3.898-2.924-6.045-1.734c-2.148,1.19-2.924,3.897-1.734,6.045
+      l17.584,31.727c-28.015,15.788-48.661,43.115-55.465,75.544C94.106,119.126,98.108,124.069,103.475,124.069z M267.697,76.786
+      c0,5.282-4.282,9.565-9.565,9.565c-5.282,0-9.565-4.282-9.565-9.565c0-5.282,4.282-9.565,9.565-9.565
+      C263.415,67.221,267.697,71.504,267.697,76.786z M154.508,67.221c5.282,0,9.565,4.282,9.565,9.565c0,5.282-4.282,9.565-9.565,9.565
+      c-5.282,0-9.565-4.282-9.565-9.565C144.943,71.504,149.225,67.221,154.508,67.221z"></path>
+                      </g>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg height="30px" x="0px" y="0px" viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
+                      <path style="fill:#E16B5A;" d="M255.333,0.048c0,0,150.936-6.78,230.932,144.636c-42.26,0-243.764,0-243.764,0
+      s-46.036-1.512-85.28,54.244c-11.32,23.352-23.392,47.46-9.808,94.916C127.793,260.704,43.265,113.8,43.265,113.8
+      S102.889,6.072,255.333,0.048z"></path>
+                      <path style="fill:#CC6152;" d="M255.333,0.048c-2.604,0.104-5.116,0.308-7.668,0.468c40.752,2.968,150.852,22.468,215.148,144.168
+      c9.928,0,18.016,0,23.444,0C406.265-6.736,255.333,0.048,255.333,0.048z"></path>
+                      <path style="fill:#FFD464;" d="M478.409,384.488c0,0-69.6,133.852-240.968,127.268c21.14-36.524,121.912-210.704,121.912-210.704
+      s24.328-39.044-4.4-100.844c-14.604-21.464-58.844-43.96-106.812-55.952c38.576-0.384,237.644,0.024,237.644,0.024
+      S549.417,249.7,478.409,384.488z"></path>
+                      <path style="fill:#F2C95F;" d="M485.781,144.284c0,0-101.54-0.208-173.636-0.184c69.164,0.016,152.012,0.184,152.012,0.184
+      s63.636,105.416-7.372,240.204c0,0-63.776,122.416-219.348,127.268l0,0c171.368,6.584,240.972-127.268,240.972-127.268
+      C549.417,249.7,485.781,144.284,485.781,144.284z"></path>
+                      <path style="fill:#74B340;" d="M33.333,385.504c0,0-81.324-127.104,10.08-271.952c21.124,36.54,121.84,210.752,121.84,210.752
+      s21.696,40.552,89.684,46.616c25.916-1.888,52.876-3.492,87.264-38.952c-18.96,33.532-104.172,180.028-104.172,180.028
+      S114.757,514.292,33.333,385.504z"></path>
+                      <circle style="fill:#FFFFFF;" cx="254.721" cy="258.08" r="116"></circle>
+                      <circle style="fill:#2995CC;" cx="254.681" cy="258.08" r="92"></circle>
+                      <path style="fill:#268CBF;" d="M254.705,166.1c-1.832,0-3.644,0.068-5.444,0.172c48.272,2.82,86.552,42.848,86.552,91.824
+      c0,48.984-38.28,89.016-86.552,91.836c1.804,0.1,3.616,0.172,5.444,0.172c50.804,0,92-41.196,92-92.008
+      C346.705,207.292,305.509,166.1,254.705,166.1z"></path>
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="position-relative mobile-2">
+              <svg width="234" height="559" viewBox="0 0 274 559">
+                <path d="M-391.470,557.806 L-391.470,70.670 C-391.470,70.670 -403.135,0.667 -316.142,0.667 L-99.709,0.667 C-99.709,0.667 -27.565,-1.084 -27.565,71.731 L-27.565,558.806 L-391.470,557.806 ZM-278.000,27.000 C-280.209,27.000 -282.000,28.791 -282.000,31.000 C-282.000,33.209 -280.209,35.000 -278.000,35.000 C-275.791,35.000 -274.000,33.209 -274.000,31.000 C-274.000,28.791 -275.791,27.000 -278.000,27.000 ZM-180.500,27.000 L-253.500,27.000 C-255.433,27.000 -257.000,28.567 -257.000,30.500 C-257.000,32.433 -255.433,34.000 -253.500,34.000 L-180.500,34.000 C-178.567,34.000 -177.000,32.433 -177.000,30.500 C-177.000,28.567 -178.567,27.000 -180.500,27.000 ZM-161.000,27.000 C-163.209,27.000 -165.000,28.791 -165.000,31.000 C-165.000,33.209 -163.209,35.000 -161.000,35.000 C-158.791,35.000 -157.000,33.209 -157.000,31.000 C-157.000,28.791 -158.791,27.000 -161.000,27.000 ZM-143.000,27.000 C-145.209,27.000 -147.000,28.791 -147.000,31.000 C-147.000,33.209 -145.209,35.000 -143.000,35.000 C-140.791,35.000 -139.000,33.209 -139.000,31.000 C-139.000,28.791 -140.791,27.000 -143.000,27.000 ZM-44.000,67.000 C-44.000,64.239 -46.239,62.000 -49.000,62.000 L-370.000,62.000 C-372.761,62.000 -375.000,64.239 -375.000,67.000 L-375.000,539.000 C-375.000,541.761 -372.761,544.000 -370.000,544.000 L-49.000,544.000 C-46.239,544.000 -44.000,541.761 -44.000,539.000 L-44.000,67.000 Z" class="iphone-cls1"></path>
+                <path d="M4.629,557.988 L5.369,198.142 C5.138,198.228 4.890,198.282 4.629,198.282 C3.457,198.282 2.507,197.332 2.507,196.160 L2.507,181.311 C2.507,180.140 3.457,179.190 4.629,179.190 C4.905,179.190 5.166,179.246 5.408,179.342 L5.465,151.440 C5.209,151.551 4.926,151.613 4.629,151.613 C3.457,151.613 2.507,150.663 2.507,149.491 L2.507,134.643 C2.507,133.471 3.457,132.521 4.629,132.521 C4.942,132.521 5.237,132.593 5.504,132.714 L5.562,104.719 C5.279,104.858 4.965,104.944 4.629,104.944 C3.457,104.944 2.507,103.994 2.507,102.823 L2.507,81.609 C2.507,80.438 3.457,79.488 4.629,79.488 C4.986,79.488 5.318,79.585 5.613,79.741 L5.690,42.365 C5.690,42.365 10.287,4.181 42.823,4.181 L180.799,4.181 C180.765,4.010 180.746,3.833 180.746,3.651 C180.746,2.187 181.934,0.999 183.398,0.999 L221.592,0.999 C223.057,0.999 224.245,2.187 224.245,3.651 C224.245,3.833 224.226,4.010 224.191,4.181 L232.732,4.181 C232.732,4.181 268.805,7.364 268.805,40.243 L268.805,557.988 L4.629,557.988 ZM137.000,27.000 C135.343,27.000 134.000,28.343 134.000,30.000 C134.000,31.657 135.343,33.000 137.000,33.000 C138.657,33.000 140.000,31.657 140.000,30.000 C140.000,28.343 138.657,27.000 137.000,27.000 ZM156.500,50.000 L117.500,50.000 C116.119,50.000 115.000,51.119 115.000,52.500 C115.000,53.881 116.119,55.000 117.500,55.000 L156.500,55.000 C157.881,55.000 159.000,53.881 159.000,52.500 C159.000,51.119 157.881,50.000 156.500,50.000 ZM248.000,85.000 L27.000,85.000 L28.000,537.000 L248.000,537.000 L248.000,85.000 Z" class="iphone-cls1"></path>
+                <g>
+                  <path d="M592.113,171.765 C592.113,173.523 588.930,174.947 588.930,174.947 L587.869,174.947 C587.273,174.947 586.963,174.947 586.809,174.947 L586.809,90.094 L587.869,90.094 L588.930,90.094 C588.930,90.094 592.113,91.519 592.113,93.277 L592.113,125.927 L588.930,132.026 L592.113,138.464 L592.113,171.765 ZM578.382,554.867 L323.755,554.867 C320.825,554.867 318.450,552.493 318.450,549.564 L318.450,9.485 C318.450,6.556 320.825,4.181 323.755,4.181 L578.382,4.181 C581.312,4.181 583.687,6.556 583.687,9.485 L583.687,549.564 C583.687,552.493 581.312,554.867 578.382,554.867 ZM530.000,28.000 C530.000,26.343 528.657,25.000 527.000,25.000 L403.000,25.000 C401.343,25.000 400.000,26.343 400.000,28.000 L400.000,36.000 C400.000,37.657 401.343,39.000 403.000,39.000 L527.000,39.000 C528.657,39.000 530.000,37.657 530.000,36.000 L530.000,28.000 ZM566.000,70.000 C566.000,67.239 563.761,65.000 561.000,65.000 L343.000,65.000 C340.239,65.000 338.000,67.239 338.000,70.000 L338.000,532.000 C338.000,534.761 340.239,537.000 343.000,537.000 L561.000,537.000 C563.761,537.000 566.000,534.761 566.000,532.000 L566.000,70.000 ZM591.113,201.464 L591.113,238.587 C591.113,240.344 589.688,241.768 587.930,241.768 L586.869,241.768 L586.869,198.282 L587.930,198.282 C589.688,198.282 591.113,199.706 591.113,201.464 Z" class="iphone-cls1"></path>
+                  <circle cx="347.5" cy="33.234" r="5.844" class="iphone-cls2"></circle>
+                </g>
+              </svg>
+              <div class="mobile-content">
+                <h3>iOS and Safari
+                </h3>
+                <ul class="list-inline">
+                  <li>
+                    <svg height="30px"  x="0px" y="0px" viewBox="0 0 291.538 291.538" style="enable-background:new 0 0 291.538 291.538;" xml:space="preserve">
+                      <g>
+                        <path style="fill:#CCD0D2;" d="M188.373,44.308c10.97-11.744,18.39-28.049,16.359-44.308c-15.804,0.564-34.958,9.277-46.302,21.02
+      c-10.169,10.396-19.072,27.011-16.696,42.951C159.369,65.164,177.385,56.033,188.373,44.308z M222.03,156.593
+      c-0.337-36.451,28.859-53.958,30.152-54.804c-16.414-24.753-41.977-28.14-51.081-28.522c-21.767-2.285-42.442,13.182-53.493,13.182
+      c-11.006,0-28.03-12.882-46.083-12.536c-23.733,0.391-45.601,14.211-57.79,36.114C19.081,154.09,37.416,219.363,61.44,255.104
+      c11.744,17.497,25.727,37.125,44.089,36.415c17.725-0.71,24.407-11.789,45.792-11.789c21.394,0,27.384,11.789,46.101,11.434
+      c19.045-0.355,31.098-17.834,42.742-35.386c13.473-20.292,19.027-39.938,19.345-40.93
+      C259.1,214.611,222.421,200.182,222.03,156.593z"></path>
+                      </g>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg height="30px"  x="0px" y="0px" viewBox="0 0 291.32 291.32" style="enable-background:new 0 0 291.32 291.32;" xml:space="preserve">
+                      <g>
+                        <g>
+                          <path style="fill:#26A6D1;" d="M145.66,0C65.547,0,0,65.547,0,145.66s65.547,145.66,145.66,145.66s145.66-65.547,145.66-145.66
+      S225.772,0,145.66,0z M145.66,264.008c-65.547,0-118.348-52.802-118.348-118.348S80.113,27.311,145.66,27.311
+      S264.008,80.113,264.008,145.66S211.206,264.008,145.66,264.008z"></path>
+                          <path style="fill:#E2574C;" d="M221.22,70.099l-56.443,94.679l-38.236-38.236C126.542,126.542,221.22,70.099,221.22,70.099z"></path>
+                          <path style="fill:#E4E7E7;" d="M70.099,221.22l94.679-56.443l-38.236-38.236C126.542,126.542,70.099,221.22,70.099,221.22z"></path>
+                        </g>
+                      </g>
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="position-relative mobile-3">
+              <svg width="247" height="559" viewBox="0 0 287 559">
+                <g>
+                  <path d="M274.000,194.000 C277.314,194.000 280.000,196.686 280.000,200.000 L280.000,236.000 C280.000,239.314 277.314,242.000 274.000,242.000 " class="windows-cls1"></path>
+                  <path d="M274.000,88.000 C274.000,88.000 282.000,87.000 282.000,96.000 L282.000,126.000 L278.000,132.000 L282.000,137.000 L282.000,170.000 C282.000,170.000 281.750,179.750 274.000,180.000 " class="windows-cls1"></path>
+                  <path d="M267.382,554.867 L12.755,554.867 C9.825,554.867 7.450,552.493 7.450,549.564 L7.450,9.485 C7.450,6.556 9.825,4.181 12.755,4.181 L267.382,4.181 C270.312,4.181 272.687,6.556 272.687,9.485 L272.687,549.564 C272.687,552.493 270.312,554.867 267.382,554.867 ZM219.000,28.000 C219.000,26.343 217.657,25.000 216.000,25.000 L92.000,25.000 C90.343,25.000 89.000,26.343 89.000,28.000 L89.000,36.000 C89.000,37.657 90.343,39.000 92.000,39.000 L216.000,39.000 C217.657,39.000 219.000,37.657 219.000,36.000 L219.000,28.000 ZM255.000,70.000 C255.000,67.239 252.761,65.000 250.000,65.000 L32.000,65.000 C29.239,65.000 27.000,67.239 27.000,70.000 L27.000,532.000 C27.000,534.761 29.239,537.000 32.000,537.000 L250.000,537.000 C252.761,537.000 255.000,534.761 255.000,532.000 L255.000,70.000 Z" class="windows-cls1"></path>
+                  <circle cx="36.5" cy="33.234" r="5.844" class="windows-cls2"></circle>
+                </g>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      
+      
+      </div>
+
+
+<div class="consulting-section">
+  <section class="consulting ">
+    <div class="container section-padding">
+      <h2 class="heading">Mobility Consulting</h2>
+      <p class="content">
+        We provide custom-curated mobility consulting services to help your app reach its target audiences. We provide end-end mobile services with the most effective, most comprehensive mobility solutions available. We intend to streamline your processes with mobility to cut costs, slash downtime and empower customer service.
+      </p>
+     <img class="responsive-image" src="images/mobility-consulting-graphic.png">
+    </div>
+  </section>
+
+</div>
+<div class="services">
+  <section class="service mobility-partner gradient-mobilitypartner--service">
+    <div class="container section-padding">
+      <h2 class="heading">Why choose us as your mobility partners?</h2>
+      <div class="content" >
+        <ul class="dashed">
+          <li >Exposed to Agile methodologies</li>
+          <li>Flexible and Scalable deployment</li>
+          <li>Complete data security</li>
+          <li>Deep technical expertise</li>
+          <li>Subject matter experts -
+            <a href="expertise/">See our expertise</a>
+          </li>
+        </ul>
+        <div class="bottom-content">
+          <div>
+            <p>
+              Reach out for
+            </p>
+          </div>
+          <div class="btn-content">
+            <a class="btn-rounded red" href="contact-us.html">Complete Mobility Audit. Free!</a>
+            <p>
+              <sup>*</sup>20 mins free consultation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="progressive-web-app">
+  <section class="service prop-web-app gradient-prop-web-app-services">
+    <div class="container section-padding">
+      <div class="">
+        <h2 class="heading">Progressive Web Apps</h2>
+        <p class="content">Get the best of the web and the apps world in one place. Let all those modern browsers help the user get the app-like experience which loads quickly on their networks. There is no other better way to make that user build a
+          relationship with your solutions right from the start. Let it be responsive to any form-factor.
+        </p>
+        <div class="hidden-xs class prog-illustrate-desktop position-relative">
+          <div class="">
+            <ul>
+              <li class="elems elem1">progressive</li>
+              <li class="elems elem2">Safe</li>
+              <li class="elems elem3">Connectivity Independent</li>
+              <li class="elems elem4">Re-Engagable</li>
+              <li class="elems elem5">Discoverable</li>
+              <li class="elems elem6">Link
+              </li>
+              <li class="elems elem7">Refreh</li>
+              <li class="elems elem8">Responisve</li>
+              <li class="elems elem9">APP-LIKE</li>
+            </ul>
+          </div>
+          <img src="assets/images/progressive-iphone1-img.png" alt="" class="phone-1">
+          <img src="assets/images/progressive-diagram-img.png" alt="" class="phone-connect">
+          <img src="assets/images/progressive-iphone2-img.png" alt="" class="phone-2">
+        </div>
+        <div class="visible-xs-block prog-illustrate-mobile position-relative">
+          <!-- <ul>
+            <li class="elems elem1">progressive</li>
+            <li class="elems elem2">Safe</li>
+            <li class="elems elem3">Connectivity Independent</li>
+            <li class="elems elem4">Re-Engagable</li>
+            <li class="elems elem5">Discoverable</li>
+            <li class="elems elem6">Link </li>
+            <li class="elems elem7">Refreh</li>
+              <li class="elems elem8">Responisve</li>
+              <li class="elems elem9">APP-LIKE</li>
+          </ul> -->
+          <img src="assets/images/progressive-iphone1-img.png" alt="" class="phone-1">
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<div class="design-and-ui">
+  <section class="service design-ux gradient-design-ux-services">
+    <div class="container section-padding">
+      <h2 class="heading">Design &amp; User Experience
+      </h2>
+      <p class="content">
+        This is one of our core strengths and we would not hesitate to brag about it to. Starting from the ideation to wireframing to prototypes we build a world that feels too good to be true. The best tools and technologies along with effective
+        communication form the strength of our process. We make sure every app we build is uniquely attractive and beautiful.</p>
+      <div class="ux-img-wrap">
+        <span class="divider">&nbsp;</span>
+        <div class="ui">
+          <p class="heading">UI<span>User Interface</span>
+          </p>
+          <p>Every interface is unique, we explore new technologies and delivery methods every time we build something. This keeps the overall feel and aesthetic effective and modern.</p>
+        </div>
+        <img src="images/userexperience-img.png" alt="" class="img-responsive">
+        <div class="ux">
+          <p class="heading">UX
+            <span>User Experience</span>
+          </p>
+          <p class="content">
+            We take great care to provide the most intuitive interface, considering context and audience we create tailored experience that are enjoyable and memorable.
+          </p>
+        </div>
+        <span class="divider">&nbsp;</span>
+      </div>
+      <ul class="list-features">
+        <li>Visual Design</li>
+        <li>Interactive Design</li>
+        <li>Responsive Design</li>
+        <li>Customer Journey Maps</li>
+        <li>Wireframing</li>
+      </ul>
+    </div>
+  </section>
+
+</div>
+<div class="cms-framework">
+  <section class="service cms-frm">
+    <div class="container section-padding">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="heading">CMS &amp; Framworks</p>
+          <p class="content">
+            Our expertise in CMS &amp; Frameworks is all that you need to create online presence through easy management of content. We ace in advanced CMS solutions like WordPress, Drupal, Joomla, etc. Our solutions are highly interactive, scalable and robust.
+          </p>
+          <ul class="list-inline frm-icon">
+            <li><img src="images/wordpress-icon.png" alt="missing"></li>
+            <li><img src="images/joomla-icon.png" alt="missing"></li>
+            <li><img src="images/drupal-icon.png" alt="missing"></li>
+            <li><img src="images/typo3-icon.png" alt="missing"></li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="get-a-quote.html">
+              <button class="btn-rounded">Get a Quote</button>
+            </a>
+            <a href="/portfolio">
+              <button class="btn-rounded">View our Work</button>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <p class="heading">eCommerce</p>
+          <p class="content">
+            We will help your eCommerce venture get off the ground with full speed. Our past experience and delivery of many extraordinary solutions give us an edge to make your business succeed. We build beautiful storefront that has powerful management system
+            and is mobile optimized.
+          </p>
+          <ul class="list-inline com-icon">
+            <li><img src="images/magento-icon.png" alt=""></li>
+            <li><img src="images/shopify-icon.png" alt=""></li>
+            <li><img src="images/os-commerce.png" alt=""></li>
+            <li><img src="images/opencart-icon.png" alt=""></li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="get-a-quote.html">
+              <button class="btn-rounded">Get a Quote</button>
+            </a>
+            <a href="/portfolio">
+              <button class="btn-rounded">View our Work</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+
+
+
+</body>
+</html>
